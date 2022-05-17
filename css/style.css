@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap'); /*SOLO X TITOLO!!*/
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap'); /* sottotitolo */
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3 !important;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  opacity: 0.9;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Rajdhani', sans-serif;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  z-index:2;
+}
+
+/*.nocover a:hover { z-index: 3; }
+.cover a:hover { z-index: 1; }*/
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.titolo { 
+	text-align: left;
+	position: relative;
+	bottom: 0px;
+	left: 42px;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	z-index: 3;
+}
+#title { 
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	letter-spacing: 1.5;
+	font-size: 38px;
+	font-weight: 700;
+	z-index: 2;
+		}
+#subtitle {
+	font-family: 'Amatic SC', cursive;
+	font-size: 22px;
+	z-index: 1;
+		}
+
+#main { 
+	top: 2%;
+	bottom: 2%;
+	margin-bottom: 5px;
+}
+
+span .titolo { 
+margin: 0px;
+padding: 0px; 
+}
+span #nav-button { 
+position: fixed; }
+
+#nav-button { 
+	margin: 2%; 
+	top: 0px;
+	position: absolute;
+	z-index: 1;
+}
+ 
+
+ /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 70%;
+    border-top: 0px !important;
+    border-radius: 30px;
+    /*padding: 50px;*/
+  }
+
+ .carousel-item { 
+ 	border-top: 0px !important;
+  	border-radius: 70px;
+  	padding: 50px;
+  	padding-top: 0px !important;
+  	}
+
+footer { 
+	text-align: center;
+	margin-bottom: 0px; 
+	font-family: 'Rajdhani', sans-serif;
+}
+
+
+
+/* social icons */
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+a, a:hover {
+	text-decoration: none;
+}
+
+.socialbtns, .socialbtns ul, .socialbtns li {
+  margin: 0;
+  padding: 3px;
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns .fa {
+	width: 36px;
+  height: 37px;
+	color: #000;
+	background-color: #FFF;
+	border: 1px solid #000;
+	padding-top: 13px;
+	border-radius: 22px;
+	-moz-border-radius: 22px;
+	-webkit-border-radius: 22px;
+	-o-border-radius: 22px;
+}
+
+.socialbtns .fa:hover {
+	color: #ffffff;
+	background-color: #000;
+	border: 1px solid #000;
+}
+
+#video-button { 
+position: absolute;
+right: 4%; 
+height: 50px;
+width: 55px;
+}
+
+
+/*STILE PAGINA DI PRESENTAZIONE BAND*/
+.pagina-band { 
+	padding: 50px !important;
+	padding-top: 1px !important;
+	padding-bottom: 0px !important;
+}
+
+p { padding-left: 50px;
+	padding-right: 50px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 18px;
+	text-align: justify;
+}
+
+ul .presentazione-componenti {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 30px;
+	text-decoration: underline;
+	list-style-type: none;
+}
+
+li .presentazione-componenti { 
+	height: 550px; 
+	padding:  20px;
+}
+
+img .presentazione-componenti { 
+	height: 550px; 
+	padding:  20px;
+}
+
+
+
+/* STILE GALLERIA*/
+#galleria { 
+	padding: 50px; 
+	padding-top: 0px;
+}
+
+div.gallery {
+  border: 0px #ccc;
+}
+
+div.gallery:hover {
+  border: 0px #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 4px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+
