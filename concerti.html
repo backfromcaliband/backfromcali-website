@@ -33,7 +33,7 @@
     <!-- LOGO -->
    <div class="logo-titolo">
     <h1 id="titolo">BACK FROM CALI</h1>
-    <h2 id="sottotitolo">SLASH FEAT. MYLES KENNEDY & THE CONSPIRATORS TRIBUTE BAND</h2>
+   <h2 id="sottotitolo">SLASH FEAT. MYLES KENNEDY & THE CONSPIRATORS TRIBUTE BAND</h2>
    </div>
    <nav class="navbar">
      <div class="logo"></div>
@@ -56,41 +56,34 @@
              <li><a href="band.html#jojo"><font color="white">Jojo</font></a></li>
            </ul>
          </li>
-         <li><a href="concerti.html">CONCERTI</a></li>
+         <li><a href="#">CONCERTI</a></li>
          <li><a href="galleria.html">GALLERIA</a></li>
-         <li><a href="#">CONTATTI</a></li>
+         <li><a href="contatti.html">CONTATTI</a></li>
        </div>
      </ul>
    </nav>
  </div>
 </header>
-
 <main>
-  <div id="riempi"></div>
-<section id="contact">
-  <div class="container">
-    <h1><font face="Amatic SC">Contatti</font></h1>
-      <div class="row">
-
-        <div class="col-md-6 contact-info">
-          <div class="follow"><i class="fas fa-envelope" aria-hidden="true"></i> backfromcali@gmail.com</div>
-        
-          <div class="follow"><i class="fas fa-phone" aria-hidden="true"></i> Riccardo +39 348 5193732 | Andrea +39 348 6460037</div>
-        
-          <div class="follow"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Reggio Emilia, Italia</div>
-
-          <div class="follow"><label><b>Seguici sui Social </b></label>
-            <a href="https://www.facebook.com/BFCSlashftMylesKennedyandtheConspirators/?ref=page_internal"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
-            <a href="https://www.youtube.com/watch?v=0W2T0RZs5Sc&ab_channel=Lucrezia"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-            <a href="https://www.instagram.com/backfromcalitributeband/"><i class="fab fa-instagram" aria-hidden="true""></i></a>
-          </div> 
-
-            <a href="mailto:backfromcali@gmail.com" class="btn btn-primary"><label><b>MANDACI UNA EMAIL</b></label></a>
-        </div>
-    </div>
-  </div>
-</section> 
+<div id="tabella">
+<table><caption>eventi passati</caption>
+<thead><tr><th  class="gruppo1"></th><th class="gruppo2"></th><th class="gruppo3"></th></tr></thead>
+<tbody>
+<tr><td class="gruppo1">8 LUGLIO 2017</td><td class="gruppo2"><i><a class="link-date" href="https://www.facebook.com/events/1545260598868748/?ref=newsfeed">Cacciolanoia Festival</a></i></td><td class="gruppo3">Scandiano (RE)</td></tr>
+<tr><td class="gruppo1">6 LUGLIO 2017</td><td class="gruppo2"><i><a class="link-date" href="https://www.facebook.com/events/233710543807645/?ref=newsfeed">Weller for equality</a></i>, Weller pub</td></td><td class="gruppo3">Rubiera (RE)</td></tr>
+<tr><td class="gruppo1">21 GIUGNO 2017</td><td class="gruppo2">Stand di <i><a class="link-date" href="https://www.facebook.com/postozerobyradiomusichiere/"> Posto Zero Radio</a></i>, Notte Rosa</td><td class="gruppo3">Piazza San Prospero, Reggio Emilia (RE)</td></tr>
+<tr><td class="gruppo1">16 GIUGNO 2017</td><td class="gruppo2">La Baia</td><td class="gruppo3">Luzzara (RE)</td></tr>
+<tr><td class="gruppo1">9 GIUGNO 2017</td><td class="gruppo2"><a class="link-date hrefhttps://www.facebook.com/events/169027260294751/?ref=newsfeed">Harris Pub</a></td><td class="gruppo3">Scandiano (RE)</td></tr>
+<tr><td class="gruppo1">22 APRILE 2017</td><td class="gruppo2">Platz Pub</td><td class="gruppo3">Reggiolo (RE)</td></tr>
+</tbody>
+</table>
+</div>
 </main>
+
+<!-- videoclip -->
+<center><font face="Rajdhani"><a id="anastasia" rel="preconnect" href="https://www.youtube.com/watch?v=kgx4WGK0oNU&ab_channel=%E9%98%BF%E9%B2%8DAbao">GUARDA IL NOSTRO PRIMO VIDEOCLIP</a></font></center>
+<div class="youtube-player"></div>
+
 <footer>
 
 <!-- icone social per la condivisione -->
@@ -132,5 +125,27 @@
 </span>
 </div>
     </footer>
+
+<!-- js videoclip non funziona :(-->
+<script>
+(function() {
+    var v = document.getElementsByClassName("youtube-player");
+    for (var n = 0; n < v.length; n++) {
+        var p = document.createElement("div");
+        p.innerHTML = labnolThumb(v[n].dataset.id);
+        p.onclick = labnolIframe;
+        v[n].appendChild(p);
+    }
+})();
+ 
+function labnolThumb(id) {
+    return '<img class="youtube-thumb" src="img/band.jpg"> <div class="play-button"></div>';
+}
+ 
+function labnolIframe() {
+    
+    this.parentNode.replaceChild(iframe, this);
+}
+</script>
     </body>
 </html>
