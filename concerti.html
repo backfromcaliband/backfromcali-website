@@ -81,8 +81,8 @@
 </main>
 
 <!-- videoclip -->
-<center><font face="Rajdhani"><a id="anastasia" rel="preconnect" href="https://www.youtube.com/watch?v=kgx4WGK0oNU&ab_channel=%E9%98%BF%E9%B2%8DAbao">GUARDA IL NOSTRO PRIMO VIDEOCLIP</a></font></center>
-<div class="youtube-player"></div>
+<center id="video"><iframe src="https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fwww.facebook.com%2FBFCSlashftMylesKennedyandtheConspirators%2Fvideos%2F423654187976488%2F&show_text=true&width=560&t=0" width="560" height="535" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></center>
+
 
 <footer>
 
@@ -125,27 +125,5 @@
 </span>
 </div>
     </footer>
-
-<!-- js videoclip non funziona :(-->
-<script>
-(function() {
-    var v = document.getElementsByClassName("youtube-player");
-    for (var n = 0; n < v.length; n++) {
-        var p = document.createElement("div");
-        p.innerHTML = labnolThumb(v[n].dataset.id);
-        p.onclick = labnolIframe;
-        v[n].appendChild(p);
-    }
-})();
- 
-function labnolThumb(id) {
-    return '<img class="youtube-thumb" src="img/band.jpg"> <div class="play-button"></div>';
-}
- 
-function labnolIframe() {
-    
-    this.parentNode.replaceChild(iframe, this);
-}
-</script>
     </body>
 </html>
