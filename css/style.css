@@ -1,131 +1,270 @@
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap'); /*SOLO X TITOLO!!*/
+/* FONT IMPORTATI*/
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap'); /*SOLO X TITOLO e nomi componenti*/
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap'); /* sottotitolo */
 
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 3 !important;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  opacity: 0.9;
+/*************************************
+ **  STILE PAGINA CONTATTI         **
+************************************/
+div#riempi {
+  padding: 20px;
 }
+#contact { 
+           background-image: url(../img/contatti.jpg);
+           background-size: cover;
+           background-position: top;
+           padding-top: 50px;
+           padding-bottom: 60px;
+           color: #777; 
+         }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  font-family: 'Rajdhani', sans-serif;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+#contact h1 { 
+              text-align: left; 
+              color: #efefef !important;
+              padding-left: 13px;
+              padding-bottom: 18px; 
+            }
+
+.follow { 
+          background: #fff;
+          font-family: 'Rajdhani', sans-serif;
+          border-radius: 5px;
+          padding: 10px;
+          margin: 15px; 
+        }
+
+.contact-info .fa { 
+                    margin: 10px;
+                    font-weight: bold;
+                    text-align: center; 
+                  }
+
+.contact-info .fa-facebook-square { 
+                                    font-size: 27px;
+                                  }
+
+.contact-info .fa-facebook-square:hover { 
+                                          color: #007bff; 
+                                        }
+
+.contact-info .fa-youtube { 
+                            font-size: 29px; 
+                          }
+
+.contact-info .fa-youtube:hover { 
+                                  color: #ff0000; 
+                                }
+.contact-info .fa-instagram { font-size: 29px; }   
+
+.contact-info .fa-instagram:hover { color: #BF196B }                         
+
+.contact-info a { 
+                  padding: 3px;
+                  color: grey; 
+                }
+
+.btn { 
+       margin: 13px;      
+       background-color: #3A30CE !important;
+       border-color: #3A30CE !important;
+       text-align: center;
+     }
+
+.contact-info .btn { font-family: 'Rajdhani', sans-serif;
+                     color: #fff; 
+                     font-size: 16px;
+                     padding-top: 7px; 
+                     padding-bottom: 3px;
+                   }  
+
+
+
+/* UTILITIES */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
 }
-
-.sidenav a:hover {
-  color: #f1f1f1;
-  z-index:2;
+body {
+ font-family: cursive;
 }
-
-/*.nocover a:hover { z-index: 3; }
-.cover a:hover { z-index: 1; }*/
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+a {
+ text-decoration: none;
 }
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-.titolo { 
-	text-align: left;
-	position: relative;
-	bottom: 0px;
-	left: 42px;
-	margin: 0px;
-	padding: 0px;
-	border: 0px;
-	z-index: 3;
-}
-#title { 
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	letter-spacing: 1.5;
-	font-size: 38px;
-	font-weight: 700;
-	z-index: 2;
-		}
-#subtitle {
-	font-family: 'Amatic SC', cursive;
-	font-size: 22px;
-	z-index: 1;
-		}
-
-#main { 
-	top: 2%;
-	bottom: 2%;
-	margin-bottom: 5px;
-}
-
-span .titolo { 
-margin: 0px;
-padding: 0px; 
-}
-span #nav-button { 
-position: fixed; }
-
-#nav-button { 
-	margin: 2%; 
-	top: 0px;
-	position: absolute;
-	z-index: 1;
-}
- 
-
- /* Make the image fully responsive */
-  .carousel-inner img {
-    width: 100%;
-    height: 70%;
-    border-top: 0px !important;
-    border-radius: 30px;
-    /*padding: 50px;*/
-  }
-
- .carousel-item { 
- 	border-top: 0px !important;
-  	border-radius: 70px;
-  	padding: 50px;
-  	padding-top: 0px !important;
-  	}
-
-footer { 
-	text-align: center;
-	margin-bottom: 0px; 
-	font-family: 'Rajdhani', sans-serif;
+li {
+ list-style: none;
 }
 
 
 
-/* social icons */
+/* NAVBAR STYLING STARTS */
+.navbar {
+font-family: 'Rajdhani', sans-serif;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px;
+ background-color: white;
+ color: #fff;
+ opacity: 0.8;
+ z-index: 8;
+ margin-right: 2%;
+}
+.nav-links a {
+ color: black;
+ text-decoration: none;
+}
+.nav-links a:hover { color: grey; }
+/* LOGO */
+/*section#logo { 
+    position: absolute !important;
+    color: black; 
+    background-color: yellow;
+    z-index: 4;
+}*/
+.logo-titolo { 
+    position: absolute;
+ z-index: 10;  
+margin-left: 3%;}
+
+#titolo {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 1.5;
+    margin-top: 6px;
+    margin-left: 6px;
+}
+
+ #sottotitolo {
+    font-size: 20px;
+    z-index: 4;
+    font-family: 'Amatic SC', cursive;
+    color: black;
+    font-weight: 400;
+    margin-left: 6px;
+    margin-bottom: 0px;
+ }
+
+
+/*************************************
+ **      STILE MENÙ                **
+************************************/
+.menu {
+font-family: 'Rajdhani', sans-serif;
+font-weight: 900;
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+}
+.menu li:hover {
+ background-color: white;
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+.menu li {
+ padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.band-drop {
+ position: relative; 
+}
+.dropdown {
+font-family: 'Rajdhani', sans-serif;
+ background-color: grey;
+ padding: 2px 2px;
+ position: absolute; /*WITH RESPECT TO PARENT*/
+ display: none;
+ border-radius: 8px;
+ top: 0px;
+ z-index: 3;
+ opacity: 1;
+ position: fixed !important;
+ margin-left: 42px;
+}
+.dropdown li + li {
+ margin-top: 10px;
+}
+.dropdown li {
+ padding: 0.5em 1em;
+ width: 8em;
+ text-align: center;
+ opacity: 0.8;
+}
+.dropdown li:hover {
+ background-color: #74728C; !important;
+ opacity: 0.9;
+}
+.band-drop:hover .dropdown {
+ display: block;
+}
+/*END NAVBAR STYLING*/
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+ display: none;
+} 
+/*HAMBURGER MENU*/
+.hamburger {
+ display: none;
+ font-size: 28px;
+ user-select: none;
+ color: black;
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+.menu { 
+ display:none;
+ position: absolute;
+ background-color: white;
+ right: 0;
+ left: 0;
+ text-align: center;
+ padding: 16px 0;
+ opacity: 0.9;
+ z-index: 10;
+ /*border: solid yellow*/
+ margin-left: 0px;
+}
+.menu li:hover {
+ display: inline-block;
+ background-color:white;
+ transition: 0.3s ease;
+}
+.menu li + li {
+ margin-top: 2px;
+}
+input[type=checkbox]:checked ~ .menu{
+ display: block;
+}
+.hamburger {
+ display: block;
+}
+.dropdown {
+ left: 41%;
+ top: 9%;
+ transform: translateX(35%);
+}
+.dropdown li:hover {
+ background-color: #74728C;
+ opacity: 0.9;
+}
+}
+
+/* SLIDESHOW STYLING*/
+.carousel-inner img { 
+    padding: 40px;
+    border-radius: 60px; }
+
+
+ /*************************************
+ **  icone footer!!!                **
+************************************/
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
-a, a:hover {
-	text-decoration: none;
+a:hover {
+    text-decoration: none;
 }
 
 .socialbtns, .socialbtns ul, .socialbtns li {
@@ -139,22 +278,23 @@ a, a:hover {
 }
 
 .socialbtns .fa {
-	width: 36px;
-  height: 37px;
-	color: #000;
-	background-color: #FFF;
-	border: 1px solid #000;
-	padding-top: 13px;
-	border-radius: 22px;
-	-moz-border-radius: 22px;
-	-webkit-border-radius: 22px;
-	-o-border-radius: 22px;
+    width: 36px;
+    height: 37px;
+    color: #000;
+    background-color: #FFF;
+    border: 1px solid #000;
+    padding-top: 16px;
+    border-radius: 22px;
+    -moz-border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -o-border-radius: 22px;
+    text-decoration: none;
 }
 
 .socialbtns .fa:hover {
-	color: #ffffff;
-	background-color: #000;
-	border: 1px solid #000;
+    color: #ffffff;
+    background-color: #000;
+    border: 1px solid #000;
 }
 
 #video-button { 
@@ -165,47 +305,433 @@ width: 55px;
 }
 
 
-/*STILE PAGINA DI PRESENTAZIONE BAND*/
-.pagina-band { 
-	padding: 50px !important;
-	padding-top: 1px !important;
-	padding-bottom: 0px !important;
+footer { 
+    text-align: center;
+    margin-bottom: 0px; 
+    font-family: 'Rajdhani', sans-serif;
 }
 
-p { padding-left: 50px;
-	padding-right: 50px;
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 18px;
-	text-align: justify;
+ /*************************************
+ **  icone social sharing           **
+************************************/
+.condivisione {
+    margin: 30px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#condividi { 
+    font-size: 18px; 
+}
+
+.resp-sharing-button__link,
+.resp-sharing-button__icon {
+  display: inline-block
+}
+
+.resp-sharing-button__link {
+  text-decoration: none;
+  color: #fff;
+  margin: 0.5em
+}
+
+.resp-sharing-button {
+  border-radius: 5px;
+  transition: 25ms ease-out;
+  padding: 0.5em 0.75em;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif
+}
+
+.resp-sharing-button__icon svg {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.4em;
+  vertical-align: top
+}
+
+.resp-sharing-button--small svg {
+  margin: 0;
+  vertical-align: middle
+}
+
+/* Non solid icons get a stroke */
+.resp-sharing-button__icon {
+  stroke: #fff;
+  fill: none
+}
+
+/* Solid icons get a fill */
+.resp-sharing-button__icon--solid,
+.resp-sharing-button__icon--solidcircle {
+  fill: #fff;
+  stroke: none
+}
+
+.resp-sharing-button--twitter {
+  background-color: #55acee
+}
+
+.resp-sharing-button--twitter:hover {
+  background-color: #2795e9
+}
+
+.resp-sharing-button--facebook {
+  background-color: #3b5998
+}
+
+.resp-sharing-button--facebook:hover {
+  background-color: #2d4373
+}
+
+.resp-sharing-button--tumblr {
+  background-color: #35465C
+}
+
+.resp-sharing-button--tumblr:hover {
+  background-color: #222d3c
+}
+
+.resp-sharing-button--reddit {
+  background-color: #5f99cf
+}
+
+.resp-sharing-button--reddit:hover {
+  background-color: #3a80c1
+}
+
+.resp-sharing-button--google {
+  background-color: #dd4b39
+}
+
+.resp-sharing-button--google:hover {
+  background-color: #c23321
+}
+
+.resp-sharing-button--linkedin {
+  background-color: #0077b5
+}
+
+.resp-sharing-button--linkedin:hover {
+  background-color: #046293
+}
+
+.resp-sharing-button--email {
+  background-color: #777
+}
+
+.resp-sharing-button--email:hover {
+  background-color: #5e5e5e
+}
+
+.resp-sharing-button--xing {
+  background-color: #1a7576
+}
+
+.resp-sharing-button--xing:hover {
+  background-color: #114c4c
+}
+
+.resp-sharing-button--whatsapp {
+  background-color: #25D366
+}
+
+.resp-sharing-button--whatsapp:hover {
+  background-color: #1da851
+}
+
+.resp-sharing-button--hackernews {
+background-color: #FF6600
+}
+.resp-sharing-button--hackernews:hover, .resp-sharing-button--hackernews:focus {   background-color: #FB6200 }
+
+.resp-sharing-button--vk {
+  background-color: #507299
+}
+
+.resp-sharing-button--vk:hover {
+  background-color: #43648c
+}
+
+.resp-sharing-button--facebook {
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+
+.resp-sharing-button--facebook:hover,
+.resp-sharing-button--facebook:active {
+  background-color: #2d4373;
+  border-color: #2d4373;
+}
+
+.resp-sharing-button--twitter {
+  background-color: #55acee;
+  border-color: #55acee;
+}
+
+.resp-sharing-button--twitter:hover,
+.resp-sharing-button--twitter:active {
+  background-color: #2795e9;
+  border-color: #2795e9;
+}
+
+.resp-sharing-button--email {
+  background-color: #777777;
+  border-color: #777777;
+}
+
+.resp-sharing-button--email:hover,
+.resp-sharing-button--email:active {
+  background-color: #5e5e5e;
+  border-color: #5e5e5e;
+}
+
+.resp-sharing-button--whatsapp {
+  background-color: #25D366;
+  border-color: #25D366;
+}
+
+.resp-sharing-button--whatsapp:hover,
+.resp-sharing-button--whatsapp:active {
+  background-color: #1DA851;
+  border-color: #1DA851;
+}
+
+.resp-sharing-button--telegram {
+  background-color: #54A9EB;
+}
+
+.resp-sharing-button--telegram:hover {
+  background-color: #4B97D1;}
+
+
+
+/*************************************
+**  STYLE VIDEOCLIP                 **
+**************************************/
+a#anastasia { 
+color: black;
+font-size: 22px;
+text-decoration: none; 
+color: white;
+background-color: lightgrey;
+border-radius: 4px;
+}
+
+a#anastasia:hover {
+        background-color: dimgrey; 
+        color: white;
+        opacity: 0.5;
+        text-decoration: underline;
+        border-radius: 4px;
+        transition: 0.5s ease;
+    }
+
+.youtube-container { 
+display: block; 
+margin: 20px auto; 
+width: 100%; 
+max-width: 600px; 
+}
+
+.youtube-player { 
+display: block; 
+width: 100%; /* assuming that the video has a 16:9 ratio */ 
+padding-bottom: 56.25%; 
+overflow: hidden; 
+position: relative; 
+width: 100%; 
+height: 100%; 
+cursor: hand; 
+cursor: pointer; 
+display: block; 
+margin-bottom: 20px;
+}
+
+img.youtube-thumb { 
+padding: 50px;
+bottom: 0; 
+display: block; 
+margin: auto; 
+max-width: 100%; 
+width: 100%; 
+position: absolute; 
+right: 0; 
+top: 0; 
+}
+
+div.play-button { 
+height: 72px; 
+width: 72px; 
+left: 50%; 
+top: 50%; 
+margin-left: -36px; 
+margin-top: -36px; 
+position: absolute; 
+background: url("https://i.imgur.com/TxzC70f.png") no-repeat; 
+}
+
+#youtube-iframe { 
+width: 100%; 
+height: 100%; 
+position: absolute; 
+top: 0; 
+left: 0; 
+}
+
+
+/*STILE PAGINA DI PRESENTAZIONE BAND*/
+.pagina-band { 
+    padding: 40px;
+    padding-top: 19px;
+    padding-bottom: 0px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: justify;
+}
+
+
+/*p { padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18px;
+    text-align: justify;*/
 }
 
 ul .presentazione-componenti {
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-	font-size: 30px;
-	text-decoration: underline;
-	list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 li .presentazione-componenti { 
-	height: 550px; 
-	padding:  20px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center !important;
+    list-style-type: none;
+    color: black;
+    height: 550px; 
+    padding:  20px;
+    color: black;
 }
 
-img .presentazione-componenti { 
-	height: 550px; 
-	padding:  20px;
+#presentazione-componenti { 
+    font-size: 7vw;
+    text-align: center;
+     }
+p.#presentazione-componenti {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img.presentazione-componenti { 
+    height: 60vw; 
+    padding-top: 0 !important;
+}
+
+@media (max-width: 480px) {
+#presentazione-componenti { 
+    font-size: 7vw !important; 
+    text-align: center !important;
+}
+
+img.presentazione-componenti { 
+    height: 60vw; 
+    padding-top: 0 !important;
+}
 }
 
 
 
-/* STILE GALLERIA*/
+/*************************************
+**    PAGINA CONCERTI              **
+**************************************/
+table {
+        text-align: left;
+        width: 100%; 
+        font-family: "Amatic SC"; 
+        font-size: 22px;
+        font-weight: 1000;
+        }
+caption { 
+          caption-side: top; 
+          padding-left: 50px;
+          font-size: 37px;
+          font-weight: 900;
+          text-align: left;
+        }
+
+#tabella { padding: 50px; }
+
+      .gruppo1 {
+        font-size: 24px;
+        text-align: left;
+        }
+      .gruppo2 {
+        font-weight: 500;
+        font-size: 30px;
+      }
+a.link-date { text-decoration: none; 
+color: black;}
+a.link-date:hover { 
+        background-color: grey; 
+        color: white;
+        opacity: 0.5;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: 0.5s ease;
+    }
+
+@media (max-width: 768px) {
+table {
+        text-align: left;
+        width: 100%; 
+        font-family: "Amatic SC"; 
+        font-size: 17px;
+        font-weight: 1000;
+        }
+caption { 
+          caption-side: top; 
+          padding-top: 60px;
+          padding-left: 50px;
+          font-size: 32px;
+          font-weight: 900;
+          text-align: left;
+        }
+
+#tabella { padding: 30px; }
+
+      .gruppo1 {
+        font-size: 17px;
+        text-align: center;
+        border-bottom: solid white 15px;
+        }
+      .gruppo2 {
+        font-weight: 500;
+        font-size: 25px;
+        border: solid white 18px;
+      }
+  }
+
+/*************************************
+**    STILE GALLERIA               **
+************************************/
+div#pagina-galleria {     
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: justify; 
+}
+
 #galleria { 
-	padding: 50px; 
-	padding-top: 0px;
+    padding: 50px; 
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 div.gallery {
   border: 0px #ccc;
+  padding-bottom: 0px;
 }
 
 div.gallery:hover {
@@ -228,14 +754,34 @@ div.desc {
   width: 24.99999%;
 }
 
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
+p#galleria { text-align: center; 
+}
 
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
 
+.documentazione {
+position: absolute;
+right: 0px;
+font-size: 28px;
+color: grey;
+text-shadow: black;
+text-decoration: none;
+padding: 10px;
+}
+
+@media (max-width: 768px) {
+#galleria {padding: 30px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+}
+
+
+a#documentazione { color: black; }
+a#documentazione:hover { color: grey; }
+
+/*************************************
+**    PAGINA DOCUMENTAZIONE        **
+************************************/
+div.style-doc {
+  padding: 50px;
+}
