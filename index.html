@@ -38,9 +38,9 @@
   <!-- contiene titolo, logo e menù di navigazione -->
    <div id="header">
     <!-- LOGO -->
-   <div class="logo-titolo">
-    <h1 id="titolo">BACK FROM CALI</h1>
-    <h2 id="sottotitolo">SLASH FEAT. MYLES KENNEDY & THE CONSPIRATORS TRIBUTE BAND</h2>
+   <div class="logo-titolo" itemscope itemtype="https://schema.org/MusicGroup">
+    <h1 id="titolo" itemprop="name">BACK FROM CALI</h1>
+    <h2 id="sottotitolo" itemprop="name">SLASH FEAT. MYLES KENNEDY & THE CONSPIRATORS TRIBUTE BAND</h2>
    </div>
    <nav class="navbar">
      <div class="logo"></div>
@@ -72,7 +72,8 @@
  </div>
 </header>
 
-<main><!-- contiene lo slideshow -->
+<main>
+ <!-- contiene lo slideshow -->
   <section class="carousel slide">
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -97,9 +98,9 @@
 </div>
 </section>
 
-<center>
+<center itemscope itemtype="https://schema.org/track">
        <audio controls="">
-        <source src="img/canzone.mp3" type="audio/mp3">
+        <source src="img/canzone.mp3" type="audio/mp3" itemprop="song">
        </audio> 
 </center>
 </main>
