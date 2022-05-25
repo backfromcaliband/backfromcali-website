@@ -193,7 +193,7 @@ font-family: 'Rajdhani', sans-serif;
  opacity: 0.8;
 }
 .dropdown li:hover {
- background-color: #74728C; !important;
+ background-color: lightgrey !important;
  opacity: 0.9;
 }
 .band-drop:hover .dropdown {
@@ -248,7 +248,7 @@ input[type=checkbox]:checked ~ .menu{
  transform: translateX(35%);
 }
 .dropdown li:hover {
- background-color: #74728C;
+ background-color: lightgrey;
  opacity: 0.9;
 }
 }
