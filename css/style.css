@@ -690,6 +690,20 @@ div.desc {
 p#galleria { text-align: center; 
 }
 
+@media (max-width: 768px) {
+#galleria {padding: 30px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+}
+
+
+
+/*************************************
+**    link footer DOCUMENTAZIONE   **
+************************************/
+a#documentazione { color: black; }
+a#documentazione:hover { color: grey; }
 
 .documentazione {
 position: absolute;
@@ -699,22 +713,4 @@ color: grey;
 text-shadow: black;
 text-decoration: none;
 padding: 10px;
-}
-
-@media (max-width: 768px) {
-#galleria {padding: 30px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-}
-
-
-a#documentazione { color: black; }
-a#documentazione:hover { color: grey; }
-
-/*************************************
-**    PAGINA DOCUMENTAZIONE        **
-************************************/
-div.style-doc {
-  padding: 50px;
 }
