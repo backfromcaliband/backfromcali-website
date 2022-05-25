@@ -516,21 +516,15 @@ height: 525; }
 a#link-post { text-decoration: none; 
 color: darkgrey;}
 
-/*STILE PAGINA DI PRESENTAZIONE BAND*/
+/*************************************
+**   STILE PAGINA BAND             **
+************************************/
 .pagina-band { 
     padding: 40px;
     padding-top: 19px;
     padding-bottom: 0px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     text-align: justify;
-}
-
-
-/*p { padding-left: 50px;
-    padding-right: 50px;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 18px;
-    text-align: justify;*/
 }
 
 ul .presentazione-componenti {
@@ -551,7 +545,7 @@ li .presentazione-componenti {
 }
 
 #presentazione-componenti { 
-    font-size: 7vw;
+    font-size: 6vw;
     text-align: center;
      }
 p.#presentazione-componenti {
@@ -566,7 +560,7 @@ img.presentazione-componenti {
 
 @media (max-width: 480px) {
 #presentazione-componenti { 
-    font-size: 7vw !important; 
+    font-size: 6vw !important; 
     text-align: center !important;
 }
 
