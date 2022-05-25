@@ -126,7 +126,7 @@ font-family: 'Rajdhani', sans-serif;
 }*/
 .logo-titolo { 
     position: absolute;
- z-index: 10;  
+ z-index: 9;  
 margin-left: 3%;}
 
 #titolo {
@@ -209,6 +209,7 @@ input[type=checkbox]{
  font-size: 28px;
  user-select: none;
  color: black;
+ z-index: 10 !important;
 }
 /* APPLYING MEDIA QUERIES */
 @media (max-width: 768px) {
@@ -221,7 +222,7 @@ input[type=checkbox]{
  text-align: center;
  padding: 16px 0;
  opacity: 0.9;
- z-index: 10;
+ z-index: 10 !important;
  /*border: solid yellow*/
  margin-left: 0px;
 }
@@ -238,6 +239,7 @@ input[type=checkbox]:checked ~ .menu{
 }
 .hamburger {
  display: block;
+ z-index: 10 !important;
 }
 .dropdown {
  left: 41%;
