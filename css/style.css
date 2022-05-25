@@ -108,7 +108,7 @@ font-family: 'Rajdhani', sans-serif;
  padding: 20px;
  background-color: white;
  color: #fff;
- opacity: 0.8;
+ opacity: 0.9;
  z-index: 8;
  margin-right: 2%;
 }
@@ -179,7 +179,6 @@ font-family: 'Rajdhani', sans-serif;
  border-radius: 8px;
  top: 0px;
  z-index: 3;
- opacity: 1;
  position: fixed !important;
  margin-left: 42px;
 }
@@ -190,11 +189,9 @@ font-family: 'Rajdhani', sans-serif;
  padding: 0.5em 1em;
  width: 8em;
  text-align: center;
- opacity: 0.8;
 }
 .dropdown li:hover {
  background-color: lightgrey !important;
- opacity: 0.9;
 }
 .band-drop:hover .dropdown {
  display: block;
